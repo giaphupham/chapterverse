@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fbfbfb;
+    font-family: 'Inter', sans-serif;;
+}
+
+a:hover {
+    color: red;
+}
+
+
+.navbar{
+    display: flex;
+    height: 80px;
+    padding: 10px 30px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FAD6A5;
+}
+
+.navbar div{
+    display: flex;
+}
+
+
+.navbar a{
+    text-decoration: none;
+    color: black;
+    padding-right: 30px;
+}
+
+.navbar .logo a{
+    font-size: 30px;
+    
+}
+
+.navbar .category-btn a{
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+}
+
+.category-btn a span{
+    padding-right: 2px;
+}
+
+.navbar .search-bar {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    border: 1px solid #CDCFD0;
+    border-radius: 8px;
+    width: 550px;
+    background-color: #fff;
+
+}
+
+.navbar .search-bar input{
+    width: 500px;
+    height: 38px;
+    padding: 0 80px 0 24px;
+    border: none;
+    border-radius: 8px;
+}
+
+.search-bar span{
+    padding: 4px 10px 1px 10px;
+    margin: 0 4px;
+    border-radius: 8px;
+    padding-top: 4px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: rgb(201, 4, 4);
+    color: #fff;
+}
+
+.user{
+    display: flex;
+    right: 1px;
+}
+
+.user div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+/*breadcrumbs start*/
+
+.breadcrumb > li + li:before{
+    content: '\f105';
+    font-size: 12px;
+    font-family: "FontAwesome";
+    color: #999;
+}
+
+
+/*breadcrumbs end*/
+
+#product{
+    background-color: #fff;
+}
+
+#mainbook .swiper-slide img{
+    height: auto;
+    width: 250px;
+    object-fit: cover;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+#quantity-input span{
+    cursor: pointer;
+}
+
+#product-description th, #product-description td{
+    padding: 4px 0;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.card .card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #fff;
+    border: 1px solid rgb(201, 201, 201);
+    padding: 20px 50px;
+}
+
+.card .card-content .info{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    transition: all 0.2s ease-in-out;
+}
+
+.hover-block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+    width: -webkit-fill-available;
+
+    opacity: 0;
+    transform: translateY(-30px);
+}
+
+.hover-block a, .hover-block i{
+    padding-top: 8px;
+    text-decoration: none;
+    color: #000;
+}
+
+.card .card-content .info a, .card .card-content .info > span, .card .card-content .hover-block i{
+    padding-top: 8px;
+    text-decoration: none;
+    color: #000;
+}
+
+.card .card-content .info a{
+    font-size: 20px;
+}
+
+.card .card-content .info span{
+    font-size: 25px;
+}
+
+.card .card-content .hover-block i{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.container .content .card:hover .card-content{
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.container .content .card:hover .hover-block{
+    opacity: 1;
+    margin-bottom: 0;
+}
+
+.container .content .card:hover .info{
+    transform: translateY(-40px);
+}
+
+.card .card-content .hover-block i:hover{
+    color: red;
+}
+
+/*footer start*/
+footer{
+    height: 50vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    margin: 0 50px;
+    margin-top: 30px;
+}
+
+footer div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+footer div h6{
+    font-size: 20px
+}
+
+footer div ul{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+footer div p{
+    padding: 10px 0;
+}
+
+footer div a{
+    cursor: pointer;
+    padding: 6px 0;
+    text-decoration: none;
+    color: #000;
+    transition: .5s;
+}
+
+footer > div > ul > a:hover{
+    transform: translateX(10px);
+    color: red;
+}
+
+footer div .icon-lists{
+    display: flex;
+    flex-direction: row;
+}
+
+.icon-lists a{
+    font-size: 30px;
+    padding-right: 30px;
+}
+
+
+
+/*footer end*/

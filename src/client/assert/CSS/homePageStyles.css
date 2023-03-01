@@ -417,7 +417,7 @@ h1{
 .hover-block{
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
     transition: all 0.2s ease-in-out;
     width: -webkit-fill-available;
 

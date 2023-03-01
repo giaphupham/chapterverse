@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/src/client/assert/CSS/productPageStyles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+</head>
+<body>
+    <nav id="navbar" class="navbar">
+        <div>
+            <div class="logo">
+                <a href="./homePage.html">
+                    CHAPTERVERSE
+                </a>
+            </div>
+            <div class="category-btn">
+                <a href="./categoriesPage.html">
+                    <span>Categories</span>
+                    <i class='bx bx-chevron-down'></i>
+                </a>
+            </div>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Tìm kiếm sản phẩm...">
+            <span>
+                <i class='bx bx-search'></i>
+            </span>
+        </div>
+        <div class="user">
+            <div class="notification">
+                <i class='bx bx-bell' ></i>
+                <span>Thông báo</span>
+            </div>
+            <div class="cart">
+                <i class='bx bx-cart-alt' ></i>
+                <span>Giỏ hàng</span>
+            </div>
+            <div class="account">
+                <i class='bx bx-user'></i>
+                <span>Tài khoản</span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main mx-11 mt-2 h-full">
+
+        <div class="breadcrumbs-container py-1 mb-2">
+            <ol class="breadcrumb inline-block">
+                <li class="inline pl-1">
+                    <a href="">Home</a>
+                </li>
+                <li class="inline pl-1">
+                    <a href="">Mystery</a>
+                </li>
+                <li class="inline pl-1">
+                    <a href="">Dark in Death: An Eve Dallas Novel (In Death, Book 46)</a>
+                </li>
+            </ol>
+        </div>
+
+        <div id="product" class="p-6 py-11 h-4/5 rounded-lg">
+            <div id="mainbook" class="h-full w-full flex flex-row">
+                <div class="w-1/3 h-full">
+                    <div class="slider swiper h-full">
+                        <div class="swiper-wrapper">
+                            <a class="swiper-slide"> <img  src="https://bookworm.madrasthemes.com/wp-content/uploads/2020/08/18-300x449.jpg" alt=""></a>
+                            <a class="swiper-slide"> <img  src="https://bookworm.madrasthemes.com/wp-content/uploads/2020/08/18-300x449.jpg" alt=""></a>
+                            <a class="swiper-slide"> <img  src="https://bookworm.madrasthemes.com/wp-content/uploads/2020/08/18-300x449.jpg" alt=""></a>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <div id="bookinfo" class="ml-20 w-full flex flex-col justify-start items-start mt-6 pr-2">
+                    <h1 class="font-bold mb-6 text-3xl">Dark in Death: An Eve Dallas Novel (In Death, Book 46)</h1>
+                    <span class="mb-6 font-semibold">
+                        By (author): <a href="" class="pl-4">J. D. Robb</a>
+                    </span>
+                    <span class="mb-4">$
+                        <span> 14.20</span> 
+                    </span>
+                    <p class="my-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                        Excepteur sint occaecat.
+                    </p>
+                    <div id="quantity-input" class="h-10 w-32 flex flex-row justify-around items-center border rounded-lg p-2 mb-4">
+                        <span class="minus font-semibold"> - </span>
+                        <span class="num border-r-2 border-l-2 border-slate-300 my-2 px-2 font-semibold" > 01</span>
+                        <span class="plus font-semibold">+</span>
+                    </div>
+                    <div id="btn-container" class="flex flex-row">
+                        <div>
+                            <button class="text-red-600 border-2 rounded-lg border-red-600 px-8 py-4 mr-4">ADD TO CART</button>
+                        </div>
+                        <div>
+                            <button class="text-white border-2 rounded-lg px-12 py-4 ml-4 bg-red-600">BUY NOW</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="product-description" class="mt-11 rounded-lg bg-white p-6 mb-11" >
+            <div class="mb-8">
+                <h1 class="text-2xl font-semibold pb-4">Product Details</h1>
+                <table class="w-full mb-6">
+                    <colgroup >
+                        <col class="w-1/4">
+                        <col>
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th class="text-left">Title</th>
+                            <td>Dark in Death: An Eve Dallas Novel</td>
+                        </tr>
+                        <tr>
+                            <th class="text-left">Author</th>
+                            <td><a href="">J.D.Robb</a></td>
+                        </tr>
+                        <tr>
+                            <th class="text-left">Publisher</th>
+                            <td>N/A</td>
+                        </tr>
+                        <tr>
+                            <th class="text-left">Categories</th>
+                            <td>
+                                <a href="">Mystery</a>,
+                                <a href="">Thriller & Suspense</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="text-left">Supplier</th>
+                            <td>N/A</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="mb-8">
+                <h1 class="text-2xl font-semibold pb-4">Description</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Praesent sit amet iaculis tellus, quis aliquam nisl. Duis ultrices, arcu ac viverra tincidunt, quam nulla scelerisque purus, 
+                    a interdum orci felis ac purus. Proin pellentesque felis tellus, ut mollis velit facilisis vel. 
+                    Vivamus in est a eros imperdiet accumsan vel ac felis. Morbi tortor turpis, hendrerit in mattis vel, rutrum a metus. 
+                    Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In mattis venenatis sapien. 
+                    Sed tempor lorem odio, ac molestie sem tempor pulvinar. Praesent porttitor vehicula sodales. Pellentesque nec egestas lacus. 
+                    Aliquam nisi quam, venenatis vitae felis at, porttitor dictum justo. Phasellus tincidunt ullamcorper augue id suscipit. 
+                    Donec dignissim massa egestas lorem facilisis, eu luctus ex eleifend. Sed dolor augue, dignissim quis mi non, 
+                    imperdiet efficitur mauris.
+                </p>
+            </div>
+        </div>
+
+        <div id="review" class="mt-11 rounded-lg bg-white p-6 mb-11">
+            <h1 class="text-2xl font-semibold pb-4">Rating & Review</h1>
+            <div>
+                <div class="rating flex flex-row w-full justify-start items-end">
+                    <div class="mr-6">
+                        <span class="text-2xl font-medium">4.0</span>
+                        <span class="text-2xl font-medium">/</span>
+                        <span>5</span>
+                    </div>
+                    <div>
+                        <i class='bx bxs-star cursor-pointer' ></i>
+                        <i class='bx bxs-star cursor-pointer' ></i>
+                        <i class='bx bxs-star cursor-pointer' ></i>
+                        <i class='bx bxs-star cursor-pointer' ></i>
+                        <i class='bx bx-star cursor-pointer' ></i>
+                    </div>
+                    <div class="rating-num pl-2 text-slate-400">
+                        <span>(12)</span>
+                    </div>
+                </div>
+                <div class="my-6 bg-black h-px"></div>
+                <div class="review">
+                    <div>
+                        <ul>
+                            <li class="flex flex-row mb-8">
+                                <div class="w-2/5 flex flex-col">
+                                    <span class="reviewer-name pb-2">GIA PHÚ</span>
+                                    <span class="day-review text-xs text-slate-400">2/28/2023</span>
+                                </div>
+                                <div class="flex flex-col">
+                                    <span class="reivew-star pb-4">
+                                        <i class='bx bxs-star' ></i>
+                                        <i class='bx bxs-star' ></i>
+                                        <i class='bx bxs-star' ></i>
+                                        <i class='bx bxs-star' ></i>
+                                        <i class='bx bx-star' ></i>
+                                    </span>
+                                    <span class="review-content">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet iaculis tellus, quis aliquam nisl. 
+                                        Duis ultrices, arcu ac viverra tincidunt, quam nulla scelerisque purus, a interdum orci felis ac purus. 
+                                        Proin pellentesque felis tellus, ut mollis velit facilisis vel. 
+                                        Vivamus in est a eros imperdiet accumsan vel ac felis. 
+                                        Morbi tortor turpis, hendrerit in mattis vel, rutrum a metus.
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="flex flex-row mb-8">
+                                <div class="w-2/5 flex flex-col">
+                                    <span class="reviewer-name pb-2">GIA PHÚ</span>
+                                    <span class="day-review text-xs text-slate-400">2/28/2023</span>
+                                </div>
+                                <div class="flex flex-col">
+                                    <span class="reivew-star pb-4">
+                                        <i class='bx bxs-star' ></i>
+                                        <i class='bx bxs-star' ></i>
+                                        <i class='bx bxs-star' ></i>
+                                        <i class='bx bxs-star' ></i>
+                                        <i class='bx bx-star' ></i>
+                                    </span>
+                                    <span class="review-content">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet iaculis tellus, quis aliquam nisl. 
+                                        Duis ultrices, arcu ac viverra tincidunt, quam nulla scelerisque purus, a interdum orci felis ac purus. 
+                                        Proin pellentesque felis tellus, ut mollis velit facilisis vel. 
+                                        Vivamus in est a eros imperdiet accumsan vel ac felis. 
+                                        Morbi tortor turpis, hendrerit in mattis vel, rutrum a metus.
+                                    </span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="Related-products" class="mb-20 bg-white p-6">
+            <h1 class="text-2xl font-semibold pb-4">Related Products</h1>
+            <div class="container swiper h-4/6">
+                <div class="content swiper-wrapper">
+                    <div class="card swiper-slide">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="/src/client/assert/img/18-120x183.jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <a href="">Dark in Death: An Eve Dallas Novel (In Death, Book 46)</a>
+                                <a href="" style="font-size:15px">J. D. Robb</a>
+                                <span>
+                                    $
+                                    <span>14.20</span>
+                                </span>
+                            </div>
+                            <div class="hover-block">
+                                <a href="">ADD TO CART</a>
+                                <i class='bx bx-heart'></i>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="card swiper-slide">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="/src/client/assert/img/30-300x449-1-120x183.jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <a href="">Dark in Death: An Eve Dallas Novel (In Death, Book 46)</a>
+                                <a href="" style="font-size:15px">J. D. Robb</a>
+                                <span>
+                                    $
+                                    <span>14.20</span>
+                                </span>
+                            </div>
+                            <div class="hover-block">
+                                <a href="">ADD TO CART</a>
+                                <i class='bx bx-heart'></i>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="card swiper-slide">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="/src/client/assert/img/18-120x183.jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <a href="">Dark in Death: An Eve Dallas Novel (In Death, Book 46)</a>
+                                <a href="" style="font-size:15px">J. D. Robb</a>
+                                <span>
+                                    $
+                                    <span>14.20</span>
+                                </span>
+                            </div>
+                            <div class="hover-block">
+                                <a href="">ADD TO CART</a>
+                                <i class='bx bx-heart'></i>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="card swiper-slide">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="/src/client/assert/img/18-120x183.jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <a href="">Dark in Death: An Eve Dallas Novel (In Death, Book 46)</a>
+                                <a href="" style="font-size:15px">J. D. Robb</a>
+                                <span>
+                                    $
+                                    <span>14.20</span>
+                                </span>
+                            </div>
+                            <div class="hover-block">
+                                <a href="">ADD TO CART</a>
+                                <i class='bx bx-heart'></i>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="card swiper-slide">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="/src/client/assert/img/18-120x183.jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <a href="">Dark in Death: An Eve Dallas Novel (In Death, Book 46)</a>
+                                <a href="" style="font-size:15px">J. D. Robb</a>
+                                <span>
+                                    $
+                                    <span>14.20</span>
+                                </span>
+                            </div>
+                            <div class="hover-block">
+                                <a href="">ADD TO CART</a>
+                                <i class='bx bx-heart'></i>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="card swiper-slide">
+                        <div class="card-content">
+                            <div class="image">
+                                <img src="/src/client/assert/img/18-120x183.jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <a href="">Dark in Death: An Eve Dallas Novel (In Death, Book 46)</a>
+                                <a href="" style="font-size:15px">J. D. Robb</a>
+                                <span>
+                                    $
+                                    <span>14.20</span>
+                                </span>
+                            </div>
+                            <div class="hover-block">
+                                <a href="">ADD TO CART</a>
+                                <i class='bx bx-heart'></i>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div>
+            <h1 class="text-2xl font-semibold pb-4">CHAPTERVERSE</h1>
+            <p>1418 River Drive, Suite 35 Cottonhall, CA 9622, United States</p>
+            <a href="mailto:chapterverse@official.com">chapterverse@official.com</a>
+            <ul class="icon-lists">
+                <a>
+                    <i class='bx bxl-instagram'></i>
+                </a>
+                <a>
+                    <i class='bx bxl-facebook' ></i>
+                </a>
+                <a>
+                    <i class='bx bxl-twitter' ></i>
+                </a>
+                <a>
+                    <i class='bx bxl-play-store'></i>
+                </a>
+            </ul>
+        </div>
+        <div>
+            <h6>Explore</h6>
+            <ul>
+                <a>About us</a>
+                <a>Bookmarks</a>
+                <a>Sitemap</a>
+                <a>Sign in/Join</a>
+            </ul>
+        </div>
+        <div>
+            <h6>Customer Service</h6>
+            <ul>
+                <a>Help Center</a>
+                <a>Returns</a>
+                <a>Product Recalls</a>
+                <a>Accessibility</a>
+                <a>Contact Us</a>
+                <a>Store Pickup</a>
+            </ul>
+        </div>
+        <div>
+            <h6>Policy</h6>
+            <ul>
+                <a>Return Policy</a>
+                <a>Terms of use</a>
+                <a>Security</a>
+                <a>Privacy</a>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="/src/client/assert/JS/productPageHandle.js"></script>
+</body>
+</html>
