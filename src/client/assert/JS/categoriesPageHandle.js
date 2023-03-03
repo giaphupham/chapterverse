@@ -1,3 +1,4 @@
+/*dropdown menu*/
 const dropdown = document.querySelector('.dropdown')
 
 const selected = dropdown.querySelector('.selected')
@@ -30,6 +31,7 @@ options.forEach(option =>{
 });
 
 
+/*side bar*/
 const cates = document.querySelectorAll('.cate');
 
 cates.forEach(cate=>{
@@ -51,4 +53,35 @@ cates.forEach(cate=>{
         }
     });
 });
+
+
+/*intersection observer*/
+function load(el){
+    el.classList.remove('opacity-0')
+}
+
+function ready(){
+    if('IntersectionObserver' in window){
+        var lazyContents = document.querySelectorAll('.products .list .card');
+
+        let observer = new IntersectionObserver((entries)=>{
+            entries.forEach(entry=>{
+                if (entry.isIntersecting){
+                    load(entry.target)
+                }
+            })
+        });
+
+        lazyContents.forEach(content =>{
+            observer.observe(content)
+        });
+
+    }
+}
+
+document.addEventListener('DOMContentLoaded', ready);
+
+
+/*product filter*/
+
 
