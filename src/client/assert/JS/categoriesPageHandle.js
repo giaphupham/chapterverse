@@ -27,6 +27,20 @@ options.forEach(option =>{
         });
 
         option.classList.add('active');
+
+        /*sort elem */
+        if(selected.querySelector('div span').innerText === 'Default sorting'){
+            while(field.firstChild){
+                field.removeChild(field.firstChild);
+            }
+            field.append(...ar);
+        }
+        if(selected.querySelector('div span').innerText === 'Sort by price: low to high'){
+            sortElem(field,li,true);
+        }
+        if(selected.querySelector('div span').innerText === 'Sort by price: high to low'){
+            sortElem(field,li,false);
+        }
     })
 });
 
@@ -81,7 +95,38 @@ function ready(){
 
 document.addEventListener('DOMContentLoaded', ready);
 
-
 /*product filter*/
+
+const price = document.querySelectorAll('.priceValue');
+const cards = document.querySelectorAll('.list .card');
+
+let field = document.querySelector('.items');
+let li = Array.from(field.children);
+let ar = [];
+
+for(let i of li){
+    const last = i.lastElementChild;
+    const x = last.children[0].children[1].children[2].children[0].innerText
+    const y = Number(x)
+    i.setAttribute('data-price',y);
+    ar.push(i)
+}
+
+function sortElem(field,li,asc){
+    let dm, sortLi;
+    dm = asc ? 1:-1;
+    sortLi = li.sort((a,b)=>{
+        const ax = a.getAttribute('data-price');
+        const bx = b.getAttribute('data-price');
+
+        return ax > bx ? (1*dm) : (-1*dm);
+    });
+
+    while(field.firstChild){
+        field.removeChild(field.firstChild);
+    }
+    field.append(...sortLi);
+}
+
 
 

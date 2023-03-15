@@ -12,6 +12,9 @@ body{
     font-family: 'Inter', sans-serif;;
 }
 
+a:hover {
+    color: red;
+}
 
 
 .navbar{
@@ -92,15 +95,6 @@ body{
     padding: 0 10px;
     cursor: pointer;
 }
-
-/**/
-.breadcrumb > li + li:before{
-    content: '\f105';
-    font-size: 12px;
-    font-family: "FontAwesome";
-    color: #999;
-}
-
 /**/
 
 .bxs-trash:hover{
@@ -111,10 +105,20 @@ td
 {
     text-align: center; 
     vertical-align: middle;
-  
 }
 
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
 
+/**/
+
+#modal input{
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #CDCFD0;
+}
 
 /*footer start*/
 footer{
@@ -169,4 +173,6 @@ footer div .icon-lists{
     padding-right: 30px;
 }
 
-/**/
+
+
+/*footer end*/

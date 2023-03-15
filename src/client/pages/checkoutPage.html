@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapterverse</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/src/client/assert/CSS/checkoutPageStyles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
+</head>
+<body>
+    <div>
+        <nav id="navbar" class="navbar">
+            <div>
+                <div class="logo">
+                    <a href="./homePage.html">
+                        CHAPTERVERSE
+                    </a>
+                </div>
+                <div class="category-btn">
+                    <a href="./categoriesPage.html">
+                        <span>Categories</span>
+                        <i class='bx bx-chevron-down'></i>
+                    </a>
+                </div>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Tìm kiếm sản phẩm...">
+                <span>
+                    <i class='bx bx-search'></i>
+                </span>
+            </div>
+            <div class="user">
+                <div class="notification">
+                    <i class='bx bx-bell' ></i>
+                    <span>Thông báo</span>
+                </div>
+                <div class="cart">
+                    <i class='bx bx-cart-alt' ></i>
+                    <span>Giỏ hàng</span>
+                </div>
+                <div class="account">
+                    <i class='bx bx-user'></i>
+                    <span>Tài khoản</span>
+                </div>
+            </div>
+        </nav>
+    
+        <div class="h-40 p-11 text-center ">
+            <div>
+                <p class="text-4xl font-semibold tracking-widest">CHECKOUT</p>
+            </div>
+        </div>
+    
+        <div class="bg-white h-32 p-8">
+            <div class="flex flex-row items-center text-red-500 w-48 justify-between text-xl mb-6">
+                <i class='bx bxs-map'></i>
+                <p>Delivery Address</p>
+            </div>
+            <div class="flex flex-row items-center">
+                <div class="flex flex-row items-center">
+                    <div class="info pr-4 font-semibold">John Cena (+84)963953***</div>
+                    <div class="address">564 Grand Ave, Brooklyn, NY 11238, Hoa Kỳ</div>
+                </div>
+                <div id="change" class="cursor-pointer text-blue-400 pl-11">
+                    change location
+                </div>
+            </div>
+        </div>
+    
+        <div class="m-11">
+            <table class="w-full">
+                <thead>
+                    <tr>
+                        <th class="w-6/12 py-4">Product</th>
+                        <th class="w-32 py-4">Price</th>
+                        <th class="w-32 py-4">Quantity</th>
+                        <th class="w-32 py-4">Total</th>
+    
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="flex flex-row my-4 justify-evenly items-center">
+                                <img src="/src/client/assert/img/18-120x183.jpg" class="w-24">
+                                <span class="font-semibold">Dark in Death: An Eve Dallas Novel</span>
+                            </div>
+                        </td>
+                        <td>
+                            <span class="price text-center">14.20</span>
+                        </td>
+                        <td>
+                            <div>
+                                <span class="quantity my-2 px-2" >2</span>
+                            </div>
+                        </td>
+                        <td>
+                            <span class="total"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="flex flex-row my-4 justify-evenly items-center">
+                                <img src="/src/client/assert/img/18-120x183.jpg" class="w-24">
+                                <span class="font-semibold">Dark in Death: An Eve Dallas Novel</span>
+                            </div>
+                        </td>
+                        <td>
+                            <span class="price text-center">14.20</span>
+                        </td>
+                        <td>
+                            <div>
+                                <span class="quantity my-2 px-2" >2</span>
+                            </div>
+                        </td>
+                        <td>
+                            <span class="total"></span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    
+        <div class="h-64 px-11 py-8 bg-slate-400 flex flex-col justify-between">
+            <div class="flex flex-row items-center">
+                <div class="flex flex-row items-center ">
+                    <span>Message: </span>
+                    <input type="text" placeholder="Lưu ý cho người bán" class="w-72 h-9 pl-4 ml-4">
+                </div>
+                <div class="flex flex-row pl-11">
+                    <span>Shipping fee:</span>
+                    <span>
+                        $<span>30.00</span>
+                    </span>
+                </div>
+            </div>
+            <div class="mt-4 mr-24">
+                <span>Order Total: </span>
+                <span class="text-red-600 text-2xl">
+                    $<span class="orderTotal"></span>
+                </span>
+            </div>
+            <div>
+                <button class="border-red-600 py-4 px-8 bg-red-600 font-semibold">
+                    Place Order
+                </button>
+            </div>
+        </div>
+    
+    
+        <footer>
+            <div>
+                <h1 class="text-2xl font-semibold pb-4">CHAPTERVERSE</h1>
+                <p>1418 River Drive, Suite 35 Cottonhall, CA 9622, United States</p>
+                <a href="mailto:chapterverse@official.com">chapterverse@official.com</a>
+                <ul class="icon-lists">
+                    <a>
+                        <i class='bx bxl-instagram'></i>
+                    </a>
+                    <a>
+                        <i class='bx bxl-facebook' ></i>
+                    </a>
+                    <a>
+                        <i class='bx bxl-twitter' ></i>
+                    </a>
+                    <a>
+                        <i class='bx bxl-play-store'></i>
+                    </a>
+                </ul>
+            </div>
+            <div>
+                <h6>Explore</h6>
+                <ul>
+                    <a>About us</a>
+                    <a>Bookmarks</a>
+                    <a>Sitemap</a>
+                    <a>Sign in/Join</a>
+                </ul>
+            </div>
+            <div>
+                <h6>Customer Service</h6>
+                <ul>
+                    <a>Help Center</a>
+                    <a>Returns</a>
+                    <a>Product Recalls</a>
+                    <a>Accessibility</a>
+                    <a>Contact Us</a>
+                    <a>Store Pickup</a>
+                </ul>
+            </div>
+            <div>
+                <h6>Policy</h6>
+                <ul>
+                    <a>Return Policy</a>
+                    <a>Terms of use</a>
+                    <a>Security</a>
+                    <a>Privacy</a>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+    <div id="modal" class="fixed inset-0 bg-black/30 flex justify-center items-center hidden">
+        <div class="w-2/5 bg-white flex flex-col p-6">
+            <div>
+                <h2 class="text-xl font-semibold mb-6">New Address</h2>
+            </div>
+            <form class="flex flex-col justify-center items-center">
+                <div class="w-full">
+                    <div class="flex flex-row justify-between">
+                        <input type="text" placeholder="Full Name" class="FullName">
+                        <input type="text" placeholder="Phone Number" class="PhoneNum">
+                    </div>
+                    <div>
+                        <input type="text" placeholder="City" class="w-full City" >
+                    </div>
+                    <div>
+                        <input type="text" placeholder="District" class="w-full District">
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Ward" class="w-full Ward" >
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Street Name, Building, House No." class="w-full houseNo">
+                    </div>
+                    <div id="map" style="height: 150px; width: 100%;">
+                    </div>
+                </div>
+                <div class="flex flex-row items-center justify-end w-full mt-4">
+                    <button type="button" class="Cancel py-2 px-6 ml-4 border-2">Cancel</button>
+                    <button type="button" class="Submit py-2 px-6 ml-4 border-2 border-red-600 bg-red-600">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="/src/client/assert/JS/checkoutPageHandle.js"></script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapterverse</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/src/client/assert/CSS/userPageStyles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <nav id="navbar" class="navbar">
+        <div>
+            <div class="logo">
+                <a href="./homePage.html">
+                    CHAPTERVERSE
+                </a>
+            </div>
+            <div class="category-btn">
+                <a href="./categoriesPage.html">
+                    <span>Categories</span>
+                    <i class='bx bx-chevron-down'></i>
+                </a>
+            </div>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Tìm kiếm sản phẩm...">
+            <span>
+                <i class='bx bx-search'></i>
+            </span>
+        </div>
+        <div class="user">
+            <div class="notification">
+                <i class='bx bx-bell' ></i>
+                <span>Thông báo</span>
+            </div>
+            <div class="cart">
+                <i class='bx bx-cart-alt' ></i>
+                <span>Giỏ hàng</span>
+            </div>
+            <div class="account">
+                <i class='bx bx-user'></i>
+                <span>Tài khoản</span>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div>
+        
+    </div>
+
+    <div class="m-11">
+        <table class="w-full">
+            <thead>
+                <tr>
+                    <th class="w-6/12 py-4">Product</th>
+                    <th class="w-32 py-4">Price</th>
+                    <th class="w-32 py-4">Quantity</th>
+                    <th class="w-32 py-4">Total</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="flex flex-row my-4 justify-evenly items-center">
+                            <img src="/src/client/assert/img/18-120x183.jpg" class="w-24">
+                            <span class="font-semibold">Dark in Death: An Eve Dallas Novel</span>
+                        </div>
+                    </td>
+                    <td>
+                        <span class="price text-center">14.20</span>
+                    </td>
+                    <td>
+                        <div>
+                            <span class="quantity my-2 px-2" >2</span>
+                        </div>
+                    </td>
+                    <td>
+                        <span class="total"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="flex flex-row my-4 justify-evenly items-center">
+                            <img src="/src/client/assert/img/18-120x183.jpg" class="w-24">
+                            <span class="font-semibold">Dark in Death: An Eve Dallas Novel</span>
+                        </div>
+                    </td>
+                    <td>
+                        <span class="price text-center">14.20</span>
+                    </td>
+                    <td>
+                        <div>
+                            <span class="quantity my-2 px-2" >2</span>
+                        </div>
+                    </td>
+                    <td>
+                        <span class="total"></span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="/src/client/assert/JS/userPageHandle.js"></script>
+</body>
+</html>
